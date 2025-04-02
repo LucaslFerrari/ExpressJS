@@ -13,6 +13,9 @@ app.get("/login", (req, res) => {
 app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "register.html"));
 });
+app.get("/forgot-password", (req, res) => {
+  res.sendFile(path.join(__dirname, "forgot-password.html"));
+});
 
 app.listen(port, () => {
   console.log(`App de exemplo esta rodando na porta ${port}`);
